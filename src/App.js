@@ -1,11 +1,13 @@
-import './App.css';
+import './styles/App.css';
+import Card from "./components/Card";
+
 
 function App() {
     return (
         <div>
-    hello
+            <Card value='3'/>
         </div>
-    );
+    )
 }
 
 export default App;
