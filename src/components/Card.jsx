@@ -1,16 +1,13 @@
 import React, {useState} from 'react';
 import '../styles/Card.css'
 
-function Card(props) {
-    const [isFlipped, setIsFlipped] = useState(false);
-
-    const handleClick = () => {
-        setIsFlipped(!isFlipped);
-
+function Card({click, ...props}) {
+    const handleClickCard = () => {
+        click(props)
     };
 
     return (
-        <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+        <div className={`card ${props.isFlipped ? 'flipped' : ''}`} onClick={handleClickCard}>
             <div className="card-front"></div>
             <div className="card-back">{props.value}</div>
         </div>

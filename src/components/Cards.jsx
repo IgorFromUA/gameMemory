@@ -2,20 +2,21 @@ import React from 'react';
 import Card from "./Card";
 import '../styles/Cards.css'
 
-const Cards = () => {
-    const mus = ['❤','❤','♫','♫','☎','☎','♨','♨','✈','✈','✣','✣','■','■','☀','☀']
-    const mixedMus = (mus) => {
-        const copyMus = [...mus]
-        const mixMus= [];
-        while (copyMus.length > 0) {
-            const randomId = parseInt(Math.random() * copyMus.length)
-        mixMus.push(copyMus.splice(randomId, 1))
-        }
-        return mixMus
-    }
+const Cards = (props) => {
+
     return (
         <div className='cards'>
-            {mixedMus(mus).map((value, index)=> <Card value={value}/>)}
+            {props.mixedMus.map((value, index) => {
+                return (
+                    <Card
+                        value={value.value}
+                        index={index}
+                        key={index + 1}
+                        isFlipped={value.isFlipped}
+                        click={props.click}
+                    />
+                )
+            })}
         </div>
     );
 };

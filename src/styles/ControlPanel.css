@@ -1,0 +1,15 @@
+.control-panel {
+    border: 10px double teal;
+    border-radius: 10px;
+    width: 417px;
+    height: 80px;
+    margin: 20px 0;
+}
+.start-res {
+    width: 100px;
+    height: 30px;
+}
+.selectSize {
+    width: 100px2;
+    height: 30px;
+}
