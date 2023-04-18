@@ -13,6 +13,7 @@ const Cards = (props) => {
                         index={index}
                         key={index + 1}
                         isFlipped={value.isFlipped}
+                        isCouple={value.isCouple}
                         click={props.click}
                     />
                 )

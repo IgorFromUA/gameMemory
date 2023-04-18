@@ -6,6 +6,7 @@ for (let i = 0; i < mus.length; i++) {
     const element = {
         value: mus[i],
         isFlipped: false,
+        isCouple: false,
     }
     cardsMus.push(element)
     cardsMus.push(element)
