@@ -2,10 +2,11 @@ import React from 'react';
 import Card from "./Card";
 import '../styles/Cards.css'
 
-const Cards = (props) => {
+const Cards = ({size, ...props}) => {
+
 
     return (
-        <div className='cards'>
+        <div className={`cards size${size}`}>
             {props.mixedMus.map((value, index) => {
                 return (
                     <Card

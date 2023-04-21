@@ -1,6 +1,8 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    width: 415px;
     gap: 5px;
 }
+.size4 {width: 215px;}
+.size16 {width: 415px;}
+.size36 {width: 630px;}

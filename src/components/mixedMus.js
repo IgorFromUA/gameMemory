@@ -1,5 +1,4 @@
-const str = '❤♫☎♨✈✣☏■'
-// + '☀✂✉☼☆✄✆☁★♕'
+const str = '❤♫☎♨✈✣☏■☀✂✉☼☆✄✆☁★♕'
 const mus = str.split('')
 const cardsMus = [];
 for (let i = 0; i < mus.length; i++) {
@@ -20,6 +19,6 @@ const mixedMus = (cardsMus) => {
     }
     return mixMus
 }
-    export const getMixedMus = () => {
-    return mixedMus(cardsMus)
+export const getMixedMus = (length) => {
+    return mixedMus(cardsMus.slice(0, length))
 }

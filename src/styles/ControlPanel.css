@@ -1,15 +1,37 @@
 .control-panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    color: teal;
     border: 10px double teal;
     border-radius: 10px;
     width: 417px;
     height: 80px;
-    margin: 20px 0;
+    margin: 40px 0;
+}
+.display {
+    font-size: 24px ;
+    font-family: monospace;
+
+    width: 200px;
 }
 .start-res {
+    background-color: lightgrey;
+    font-size: 24px ;
+    font-family: monospace;
+    color: dodgerblue;
+    border: none;
+    border-right: 4px solid teal;
     width: 100px;
-    height: 30px;
+    height: 60px;
 }
 .selectSize {
-    width: 100px2;
-    height: 30px;
+    background-color: lightgrey;
+    font-size: 24px ;
+
+    color: teal;
+    font-family: monospace;
+    border-left: 4px solid teal;
+    width: 70px;
+    height: 60px;
 }
