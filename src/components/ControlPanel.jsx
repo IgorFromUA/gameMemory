@@ -1,19 +1,20 @@
 import React from 'react';
 import '../styles/ControlPanel.css'
 
-const ControlPanel = ({onChange, value, moves}) => {
+const ControlPanel = ({onChange, value, moves, clickStart, time}) => {
 
-    const clickStart = () => {
-    }
+    const handleClickStart = () => {
+clickStart()
+}
     return (
         <div className='control-panel'>
             <button
                 className='start-res'
-                onClick={clickStart}
+                onClick={handleClickStart}
             >start game
             </button>
             <div className='display'>
-                <div>Time:</div>
+                <div>Time: {time}</div>
                 <div>Moves: {moves}</div>
             </div>
             <select

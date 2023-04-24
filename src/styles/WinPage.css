@@ -1,0 +1,29 @@
+.win-page {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 417px;
+    height: 250px;
+    border: 10px double teal;
+    border-radius: 10px;
+}
+.red {
+    color: crimson;
+}
+.blink {
+animation: myBlink 2s linear infinite;
+}
+@keyframes myBlink {
+    from {
+        opacity: 1;
+    }
+    50%{
+        opacity: .2;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
